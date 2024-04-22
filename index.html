@@ -1,0 +1,97 @@
+<!--to make sure browser tries to meet industry wide specification-->
+<!DOCTYPE html>
+<!--english labguage-->
+<html lang="en">
+    <!--in the body we find all elemnts that are to be displayed on the page-->
+  <title>Inyambo z'iwacu</title>  
+  <head>
+    <!--tells the browser how to encode characters on the page-->	  
+    <meta charset="UTF-8">	  
+
+  </head>
+  <body>
+      <!--main elements helps SEO and accessibility-->
+    <main>	
+        <h1>Inka zo mu mugamba</h1>
+        <!--section separate content from other content-->
+        <section>
+          <h2>Nkamira amakuyano</h2>
+          <p>umugamba umugamba umugamba w'inka ngira ndate umugamba nawuhawe nabasogokuru</p>
+          <!-- adding image to a web with source attribute and self closing-->
+          <!--alt displays if image fails to display-->
+          <!--turn image into link by wrapping it in a anchor tag-->
+          <a href="https://rw.wikipedia.org/wiki/INYAMBO"><img src="nyambo.jpg" alt="inka z'inyambo"></a>
+          <!--put the link text between the opening and closing text-->
+          <a href="https://rw.wikipedia.org/wiki/INYAMBO"><p>ushaka kumenya vyinshi ku nyambo kanda hano</p></a>
+          <!--to turn some of the text in the paragraph into a link-->
+          <p>woba warigeze kumenya<a href="https://rw.wikipedia.org/wiki/INYAMBO"> inyambo zo mu Burundi</a> </p>
+        </section>
+
+        <section>
+          <h2>Inka z'imbo</h2>
+          <h3>Ubwoko bw'inka z'imbo</h3>
+          <ul>
+           <li>Inyambo</li>
+           <li>Igaju</li>
+           <li>Ingamba</li>
+
+         </ul>
+         <!--helps display content of an audio.image,video ...etc different from alt of image-->
+         <figure>
+           <img src="igaju.jpg" alt="inka z'inyambo">
+           <figcaption>Zirashotse</figcaption>
+         </figure>
+         <h3>Ibikomoka ku nka</h3>
+         <!--element are numbered in ordered list-->
+         <ol>
+           <li>Amata</li>
+           <li>Inyama</li>
+           <li>Insato</li>		      
+         </ol>
+         <figure>
+           <img src="igaju.jpg" alt="inka y'igaju">
+           <figcaption><strong>Ibizira</strong> ku nka</figcaption>
+         </figure>
+       </section>  
+       <section>
+         <h2>Amahitamo ku nka</h2>
+         <form action="www.google.com">
+         <!--for the location specified to access the form we use name-->
+         <!--both input and buttons are inline element they appear next to each other-->
+         <!--radio let's you select one out of many-->
+         <!--label element makes it so if user selects the option it also selects the input element-->
+         <fieldset>
+           <!--what you should enter in part of a form-->	    
+           <legend>Unkunda inshyushyu cyangwa ikivuguto</legend>	    
+             <label> <input type="radio" name="Gukama" value="amasoro" checked>Inshyushyu</label>
+             <!--to make the select one element deselect the other i gave them same name attrbt otherwise they all selscetd-->
+             <!--select and submit radio button is based on name and value-->
+             <label><input type="radio" name="Gukama" value="amasoro">Ikivuguto</label>
+        <!--fieldset used in webform to group related input and label break line-->  
+        </fieldset>
+        <fieldset>
+          <legend>Ukanda Inka isa ite?</legend>
+            <!--use checkbox for question that have more than one answer-->
+            <!--another way to associate input text with element-->
+            <!--form data for slected checkbox is name and value thouugh value is optional it's better use it-->
+            <input type="checkbox" id="inzobe" name="umuhondo" checked> <label for="inzobe">umuhondo</label>
+            <input type="checkbox" id="inzobe" name="umweru"> <label for="umweru">umweru</label>
+            <input type="checkbox" id="inzobe" name="icyatsi"> <label for="icyatsi">icyatsi</label>
+            <!--<input type="checkbox" id="umukara">umukara-->
+       </fieldset>
+	    
+        <input id="amasoro"type="text" name="amakuyano" placeholder="amata ukunda" required>
+        <!--for the location specified to access the form we use name-->
+        <!--by default button without any attribute is sent to the action form-->
+        <!--had to add type attribute to avoid confusion since by default sends the form to the specified loaction-->
+        <button type="submit">submit</button>
+        </form>		  
+      </section>
+  </body>
+    </main> 
+    <footer> 
+      <p>Ntukanywe <a href="https://github.com/ntare6/Free_code_camp_projects"> Amata uhagaze</p></a>
+    </footer>
+      
+    
+</html>
